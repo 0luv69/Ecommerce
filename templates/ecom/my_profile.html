@@ -1,0 +1,73 @@
+{% extends 'ecom/customer_base.html' %}
+{% load static %}
+{% block content %}
+
+<style media="screen">
+  body {
+    background-color: #8c9eff;
+  }
+  .container_ {
+    padding: 30px;
+    text-align: center;
+  }
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .profile-info {
+    margin-bottom: 20px;
+  }
+  .profile-info p {
+    margin: 0;
+  }
+  .edit-profile-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .edit-profile-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .edit-profile-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .edit-profile-button:hover span {
+    padding-right: 25px;
+  }
+  .edit-profile-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+</style>
+
+<div class="container_">
+  <img src="{% static customer.profile_pic.url %}" alt="profile pic" class="profile-pic">
+  <div class="profile-info">
+    <p>{{ request.user }}</p>
+    <cite title="Source Title">{{ customer.address }} <i class="glyphicon glyphicon-map-marker"></i></cite>
+    <p><i class="glyphicon glyphicon-phone"></i> {{ customer.mobile }}</p>
+  </div>
+  <a href="/edit-profile" class="edit-profile-button"><span>Edit Profile</span></a>
+</div>
+
+{% endblock content %}
