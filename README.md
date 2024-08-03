@@ -8,7 +8,7 @@ E-commerce website where user and admin connection is made. Here user can book t
 
 ## FUNCTIONS
 
-## Customer
+### Customer
 
 - Customer can view/search products without login.
 - Customer can also add/remove product to cart without login (if customer try to add same product in cart. It will add only one)
