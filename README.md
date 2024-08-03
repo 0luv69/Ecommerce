@@ -19,6 +19,8 @@ E-commerce website where user and admin connection is made. Here user can book t
 - Customer can Download their order invoice for each order
 - Customer can send feedback to admin (without login)
 
+---
+
 ### Admin
 
 - First admin will login ( for username/password run following command in cmd )
