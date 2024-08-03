@@ -1,5 +1,9 @@
 # ECOMMERCE
 
+# Introduction
+
+E-commerce website where user and admin connection is made. Here user can book the items and admin can keep track of user.
+
 ## FUNCTIONS
 
 ## Customer
