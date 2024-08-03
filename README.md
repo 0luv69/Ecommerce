@@ -55,7 +55,7 @@ py manage.py createsuperuser
 - Open Terminal and Execute Following Commands :
 
 ```
-pip install django==3.0.5
+pip install django
 pip install django-widget-tweaks
 pip install xhtml2pdf
 
@@ -89,7 +89,7 @@ EMAIL_RECEIVING_USER = 'youremail@gmail.com'
 - Login to gmail through host email id in your browser and open following link and turn it ON
 
 ```
-https://myaccount.google.com/lesssecureapps
+
 ```
 
 ## Drawbacks/LoopHoles
