@@ -101,7 +101,8 @@ EMAIL_RECEIVING_USER = 'youremail@gmail.com'
 
 This project is developed for demo purpose and it's not supposed to be used in real application.
 
-The project has number of security flaws, because this was created for practice propose. the flaws are:
+#### The project has number of security flaws, because this was created for practice propose. the flaws are:
 
 -debug is true
+
 -no proper flow
